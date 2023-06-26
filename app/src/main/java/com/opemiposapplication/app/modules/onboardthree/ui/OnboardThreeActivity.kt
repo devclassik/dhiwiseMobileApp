@@ -19,11 +19,11 @@ class OnboardThreeActivity :
     BaseActivity<ActivityOnboardThreeBinding>(R.layout.activity_onboard_three) {
   private val viewModel: OnboardThreeVM by viewModels<OnboardThreeVM>()
 
-  private val REQUEST_CODE_SPLASH_SCREEN_ONE_ACTIVITY: Int = 954
+  private val REQUEST_CODE_SPLASH_SCREEN_ONE_ACTIVITY: Int = 548
 
-  private val REQUEST_CODE_SIGN_UP_ONE_ACTIVITY: Int = 303
+  private val REQUEST_CODE_SIGN_UP_ONE_ACTIVITY: Int = 285
 
-  private val REQUEST_CODE_SIGN_UP_TWO_ACTIVITY: Int = 621
+  private val REQUEST_CODE_SIGN_UP_TWO_ACTIVITY: Int = 521
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
@@ -34,7 +34,7 @@ class OnboardThreeActivity :
     binding.viewRectangleTwentyOne.setOnClickListener {
       val destIntent = SplashScreenOneActivity.getIntent(this, null)
       startActivityForResult(destIntent, REQUEST_CODE_SPLASH_SCREEN_ONE_ACTIVITY)
-      this.overridePendingTransition(R.anim.left_to_right ,R.anim.left_to_right )
+      this.overridePendingTransition(R.anim.left_to_right ,R.anim.bounce )
     }
     binding.txtSkip.setOnClickListener {
       val destIntent = SignUpOneActivity.getIntent(this, null)

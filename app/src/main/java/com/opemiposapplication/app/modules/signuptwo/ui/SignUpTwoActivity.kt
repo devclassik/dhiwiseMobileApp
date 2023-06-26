@@ -8,13 +8,18 @@ import androidx.appcompat.widget.SearchView
 import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
 import com.opemiposapplication.app.databinding.ActivitySignUpTwoBinding
+import com.opemiposapplication.app.modules.signupone.ui.SignUpOneActivity
 import com.opemiposapplication.app.modules.signuptwo.`data`.viewmodel.SignUpTwoVM
 import kotlin.Boolean
+import kotlin.Int
 import kotlin.String
 import kotlin.Unit
 
 class SignUpTwoActivity : BaseActivity<ActivitySignUpTwoBinding>(R.layout.activity_sign_up_two) {
   private val viewModel: SignUpTwoVM by viewModels<SignUpTwoVM>()
+
+  private val REQUEST_CODE_SIGN_UP_ONE_ACTIVITY: Int = 743
+
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
@@ -23,6 +28,10 @@ class SignUpTwoActivity : BaseActivity<ActivitySignUpTwoBinding>(R.layout.activi
   }
 
   override fun setUpClicks(): Unit {
+    binding.btnNext.setOnClickListener {
+      val destIntent = SignUpOneActivity.getIntent(this, null)
+      startActivityForResult(destIntent, REQUEST_CODE_SIGN_UP_ONE_ACTIVITY)
+    }
   }
 
   private fun setUpSearchViewGroupElevenListener(): Unit {

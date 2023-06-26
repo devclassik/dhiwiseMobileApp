@@ -1,5 +1,8 @@
 package com.opemiposapplication.app.modules.bankinformation.ui
 
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import androidx.activity.viewModels
 import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
@@ -35,5 +38,11 @@ class BankInformationActivity :
   companion object {
     const val TAG: String = "BANK_INFORMATION_ACTIVITY"
 
+
+    fun getIntent(context: Context, bundle: Bundle?): Intent {
+      val destIntent = Intent(context, BankInformationActivity::class.java)
+      destIntent.putExtra("bundle", bundle)
+      return destIntent
+    }
   }
 }

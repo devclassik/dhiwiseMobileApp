@@ -8,14 +8,19 @@ import androidx.appcompat.widget.SearchView
 import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
 import com.opemiposapplication.app.databinding.ActivitySignUpOneBinding
+import com.opemiposapplication.app.modules.otp.ui.OtpActivity
 import com.opemiposapplication.app.modules.signupone.`data`.model.SpinnerGroup903Model
 import com.opemiposapplication.app.modules.signupone.`data`.viewmodel.SignUpOneVM
 import kotlin.Boolean
+import kotlin.Int
 import kotlin.String
 import kotlin.Unit
 
 class SignUpOneActivity : BaseActivity<ActivitySignUpOneBinding>(R.layout.activity_sign_up_one) {
   private val viewModel: SignUpOneVM by viewModels<SignUpOneVM>()
+
+  private val REQUEST_CODE_OTP_ACTIVITY: Int = 196
+
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
@@ -35,6 +40,10 @@ class SignUpOneActivity : BaseActivity<ActivitySignUpOneBinding>(R.layout.activi
   }
 
   override fun setUpClicks(): Unit {
+    binding.btnNext.setOnClickListener {
+      val destIntent = OtpActivity.getIntent(this, null)
+      startActivityForResult(destIntent, REQUEST_CODE_OTP_ACTIVITY)
+    }
   }
 
   private fun setUpSearchViewGroupElevenListener(): Unit {
