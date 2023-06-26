@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listiconsaxlinearOne1RowModel" type="com.opemiposapplication.app.modules.alltransactionsbillpayment.data.model.ListiconsaxlinearOne1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowiconsaxlinearOne"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+            android:id="@+id/btnIconsaxLinearOne"
+            android:layout_height="@dimen/_30pxh"
+            android:layout_width="@dimen/_30pxh"
+            android:paddingHorizontal="@dimen/_7pxh"
+            android:paddingVertical="@dimen/_7pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_iconsaxlinear_black_900_30x30" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumndstvcable"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_weight="0.67" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDSTVCable"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listiconsaxlinearOne1RowModel.txtDSTVCable}"
+                style="@style/txtWorkSansmedium12_1" tools:text="@string/lbl_dstv_cable"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listiconsaxlinearOne1RowModel.txtTime}"
+                style="@style/txtWorkSansregular8_1" tools:text="@string/msg_02_12_2022_at_3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearColumnn980000"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_weight="0.22" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtN980000"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listiconsaxlinearOne1RowModel.txtN980000}"
+                style="@style/txtWorkSanssemibold12_3" tools:text="@string/lbl_n9_800_00"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSuccessful"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listiconsaxlinearOne1RowModel.txtSuccessful}"
+                style="@style/txtWorkSanssemibold8" tools:text="@string/lbl_successful"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

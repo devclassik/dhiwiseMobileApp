@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="phonePayThreeVM" type="com.opemiposapplication.app.modules.phonepaythree.data.viewmodel.PhonePayThreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStack"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_100">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start" android:layout_height="0dp"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnrectangle5793"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameStackrectangle5793"
+                    android:layout_height="@dimen/_520pxv" android:layout_width="match_parent">
+                    <ImageView android:id="@+id/imageRectangle5793"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_109pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_rectangle5793_22}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle5793_22"/>
+                    <LinearLayout
+                        android:id="@+id/linearColumnarrowleft"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_22pxh"
+                        android:layout_marginStart="@dimen/_22pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearRowownyourweird"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_3pxh"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/linearRowarrowleft"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginTop="@dimen/_5pxv"
+                                android:layout_weight="0.27"
+                                android:layout_width="0dp" android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/imageArrowleft"
+                                    android:layout_height="@dimen/_7pxh"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_width="@dimen/_3pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_arrowleft"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtBack"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_weight="0.89"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_1pxh"
+                                    android:singleLine="true"
+                                    android:text="@{phonePayThreeVM.phonePayThreeModel.txtBack}"
+                                    style="@style/txtWorkSansmedium12_3" tools:text="@string/lbl_back"/>
+                            </LinearLayout>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtOWNYOURWEIRD"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_55pxh"
+                                android:layout_weight="0.73"
+                                android:layout_width="0dp"
+                                android:lineSpacingExtra="@dimen/_1pxh"
+                                android:singleLine="true"
+                                android:text="@{phonePayThreeVM.phonePayThreeModel.txtOWNYOURWEIRD}"
+                                style="@style/txtWorkSanssemibold24_1" tools:text="@string/lbl_phone_pay"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEnteranAccoun"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_49pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnteranAccoun}"
+                            style="@style/txtWorkSanssemibold20" tools:text="@string/lbl_summary"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEnterReceipien"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_18pxv"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnterReceipien}"
+                            style="@style/txtWorkSansmedium12_1" tools:text="@string/lbl_payment_to3"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEnterReceipienOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnterReceipienOne}"
+                            style="@style/txtWorkSanssemibold20_1" tools:text="@string/lbl_prince_ebeanor"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEnterReceipienTwo"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnterReceipienTwo}"
+                            style="@style/txtWorkSansmedium12_1" tools:text="@string/lbl_purpose3"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEnterReceipienThree"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnterReceipienThree}"
+                            style="@style/txtWorkSanssemibold20_1" tools:text="@string/lbl_groceries"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEnterReceipienFour"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnterReceipienFour}"
+                            style="@style/txtWorkSansmedium12_1" tools:text="@string/lbl_amount"/>
+                        <LinearLayout
+                            android:id="@+id/linearRowncounter"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtNCounter"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.49"
+                                android:layout_width="0dp"
+                                android:lineSpacingExtra="@dimen/_4pxh"
+                                android:singleLine="true"
+                                android:text="@{phonePayThreeVM.phonePayThreeModel.txtNCounter}"
+                                style="@style/txtWorkSanssemibold20_1" tools:text="@string/lbl_n_5_010_25"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtEnterReceipienFive"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_121pxh"
+                                android:layout_marginTop="@dimen/_5pxv"
+                                android:layout_weight="0.51"
+                                android:layout_width="0dp"
+                                android:lineSpacingExtra="@dimen/_2pxh"
+                                android:singleLine="true"
+                                android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnterReceipienFive}"
+                                style="@style/txtWorkSansregular10" tools:text="@string/msg_service_charge"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEnterReceipienSix"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_20pxv"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnterReceipienSix}"
+                            style="@style/txtWorkSansmedium12_1" tools:text="@string/lbl_payer_s_name3"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEnterAccountN"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_9pxv"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtEnterAccountN}"
+                            style="@style/txtWorkSanssemibold20_1" tools:text="@string/lbl_stanley_dafe"/>
+                        <View android:background="@color/gray_401"
+                            android:id="@+id/lineLineSeventyThree"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginEnd="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_313pxh"/>
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearColumnlineseventythreeOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_8">
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearColumnselectbenefici"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtSelectBenefici"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{phonePayThreeVM.phonePayThreeModel.txtSelectBenefici}"
+                                    style="@style/txtWorkSansmedium12_1" tools:text="@string/msg_desired_phone_n"/>
+                                <LinearLayout
+                                    android:id="@+id/linearRowzenithbankzeroOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_18pxv"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <LinearLayout
+                                    android:id="@+id/linearRowgroup1562"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.85"
+                                    android:layout_width="0dp"
+                                    android:orientation="horizontal" style="@style/groupStylecornerRadius_8">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtGroup1562"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.12"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_4pxh"
+                                    android:paddingBottom="@dimen/_5pxv"
+                                    android:paddingEnd="@dimen/_3pxh"
+                                    android:paddingStart="@dimen/_5pxh"
+                                    android:paddingTop="@dimen/_4pxv"
+                                    android:singleLine="true"
+                                    android:text="@{phonePayThreeVM.phonePayThreeModel.txtGroup1562}"
+                                    style="@style/txtSolidRounded_1" tools:text="@string/lbl_bc"/>
+                                    <LinearLayout
+                                    android:gravity="start"
+                                    android:id="@+id/linearColumnprice"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_16pxh"
+                                    android:layout_weight="0.88"
+                                    android:layout_width="0dp" android:orientation="vertical">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtPrice"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="wrap_content"
+                                    android:lineSpacingExtra="@dimen/_3pxh"
+                                    android:singleLine="true"
+                                    android:text="@{phonePayThreeVM.phonePayThreeModel.txtPrice}"
+                                    style="@style/txtWorkSanssemibold12_4" tools:text="@string/lbl_bright_cyph"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtZenithBankZero"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:lineSpacingExtra="@dimen/_3pxh"
+                                    android:singleLine="true"
+                                    android:text="@{phonePayThreeVM.phonePayThreeModel.txtZenithBankZero}"
+                                    style="@style/txtWorkSanssemibold12_5" tools:text="@string/msg_234_08116608"/>
+                                    </LinearLayout>
+                                    </LinearLayout>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtZenithBankZeroOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_11pxv"
+                                    android:layout_marginStart="@dimen/_34pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_3pxh"
+                                    android:singleLine="true"
+                                    android:text="@{phonePayThreeVM.phonePayThreeModel.txtZenithBankZeroOne}"
+                                    style="@style/txtWorkSanssemibold12" tools:text="@string/lbl_change"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View android:background="@color/gray_401"
+                                android:id="@+id/lineLineSeventyThreeOne"
+                                android:layout_height="@dimen/_1pxv"
+                                android:layout_marginTop="@dimen/_23pxv" android:layout_width="@dimen/_313pxh"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linearRowgroup"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageGroup"
+                        android:layout_height="@dimen/_219pxh"
+                        android:layout_marginTop="@dimen/_23pxv"
+                        android:layout_width="@dimen/_37pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_group_59"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_group_59"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnpayNgn5010twentyfive"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_61pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_94pxv"
+                        android:layout_weight="0.78"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnPayNgn5010TwentyFive"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_46pxh"
+                            android:layout_marginStart="@dimen/_46pxh"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:paddingBottom="@dimen/_10pxv"
+                            android:paddingEnd="@dimen/_25pxh"
+                            android:paddingStart="@dimen/_25pxh"
+                            android:paddingTop="@dimen/_10pxv"
+                            android:singleLine="true"
+                            android:text="@string/msg_pay_ngn_5_010_2"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRounded_5" tools:text="@string/msg_pay_ngn_5_010_2"/>
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtTermAndCondition"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_19pxv"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtTermAndCondition}"
+                            style="@style/txtWorkSansregular12_5" tools:text="@string/msg_by_clicking_sub"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageGroupOne"
+                        android:layout_height="@dimen/_219pxh"
+                        android:layout_marginBottom="@dimen/_23pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_36pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_group_60"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_group_60"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowmenu"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageMenu"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_18pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_menu_white_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_menu_white_a700"/>
+                <LinearLayout android:id="@+id/linearRowownyourweirdOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_170pxh"
+                    android:layout_weight="0.88"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearColumnownyourweirdOne"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.83"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtOWNYOURWEIRDOne"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtOWNYOURWEIRDOne}"
+                            style="@style/txtWorkSanssemibold12_2" tools:text="@string/lbl_beetle_taxi_inc"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtAcctNo001122"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{phonePayThreeVM.phonePayThreeModel.txtAcctNo001122}"
+                            style="@style/txtWorkSansregular10_1" tools:text="@string/msg_acct_no_001122"/>
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/frameStackcalendar"
+                        android:layout_height="@dimen/_20pxv"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_20pxh">
+                        <ImageView android:id="@+id/imageCalendar"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_20pxh"
+                            android:layout_width="@dimen/_20pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_calendar_white_a700"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_calendar_white_a700"/>
+                        <ImageView android:id="@+id/imageTrash"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="@dimen/_10pxh"
+                            android:layout_marginEnd="@dimen/_6pxh"
+                            android:layout_marginStart="@dimen/_5pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="@dimen/_8pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_trash_white_a700"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_trash_white_a700"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+</layout>

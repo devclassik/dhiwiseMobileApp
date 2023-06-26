@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listmaximize4RowModel" type="com.opemiposapplication.app.modules.menualltransactions.data.model.Listmaximize4RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowmaximize"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+            android:id="@+id/btnMaximize"
+            android:layout_height="@dimen/_30pxh"
+            android:layout_width="@dimen/_30pxh"
+            android:paddingHorizontal="@dimen/_9pxh"
+            android:paddingVertical="@dimen/_9pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_maximize" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumndebittransfe"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_weight="0.67" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDebitTransfe"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listmaximize4RowModel.txtDebitTransfe}"
+                style="@style/txtWorkSansmedium12_1" tools:text="@string/msg_debit_transfe"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listmaximize4RowModel.txtTime}"
+                style="@style/txtWorkSansregular8_1" tools:text="@string/msg_02_12_2022_at_3"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

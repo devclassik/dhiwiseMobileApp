@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="pinLoginVM" type="com.opemiposapplication.app.modules.pinlogin.data.viewmodel.PinLoginVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnback"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_37pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearPINLogin"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end" android:id="@+id/txtBack"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{pinLoginVM.pinLoginModel.txtBack}"
+                style="@style/txtWorkSanssemibold12" tools:text="@string/lbl_back"/>
+            <ImageView android:id="@+id/imageGroupSixteen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_87pxh"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_78pxv"
+                android:layout_width="@dimen/_236pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group16"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group16"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtEnter4digitP"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{pinLoginVM.pinLoginModel.txtEnter4digitP}"
+                style="@style/txtWorkSanssemibold24" tools:text="@string/msg_enter_4_digit_p"/>
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStackgroup"
+                android:layout_height="@dimen/_447pxv"
+                android:layout_marginTop="@dimen/_53pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageGroup"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_219pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_37pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group_20"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group_20"/>
+                <ImageView android:id="@+id/imageGroupOne"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="@dimen/_219pxh"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="@dimen/_36pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group_22"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group_22"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnUseFaceId"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_100pxv"
+                    android:layout_marginEnd="@dimen/_34pxh"
+                    android:layout_marginStart="@dimen/_34pxh"
+                    android:layout_marginTop="@dimen/_100pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_use_face_id"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_1" tools:text="@string/lbl_use_face_id"/>
+                <LinearLayout android:id="@+id/linearColumnone"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_53pxh"
+                    android:layout_marginStart="@dimen/_53pxh"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:gravity="center_horizontal"
+                        android:id="@+id/recyclerPinLogin"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_37pxh}" tools:itemCount="3" tools:listitem="@layout/row_pin_login"/>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearRowzero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_118pxh"
+                        android:layout_marginTop="@dimen/_37pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtZero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_weight="0.52"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{pinLoginVM.pinLoginModel.txtZero}"
+                            style="@style/txtWorkSanssemibold24_2" tools:text="@string/lbl_0"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEleven"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_94pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_weight="0.48"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{pinLoginVM.pinLoginModel.txtEleven}"
+                            style="@style/txtWorkSanssemibold24_2" tools:text="@string/lbl2"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
