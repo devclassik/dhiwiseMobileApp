@@ -6,7 +6,7 @@ import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
 import com.opemiposapplication.app.databinding.ActivityPhonePayTwoBinding
 import com.opemiposapplication.app.modules.phonepaytwo.`data`.model.PhonePayTwoRowModel
-import com.opemiposapplication.app.modules.phonepaytwo.`data`.model.SpinnerGroup117Model
+import com.opemiposapplication.app.modules.phonepaytwo.`data`.model.SpinnerGroup911Model
 import com.opemiposapplication.app.modules.phonepaytwo.`data`.viewmodel.PhonePayTwoVM
 import kotlin.Int
 import kotlin.String
@@ -18,17 +18,17 @@ class PhonePayTwoActivity :
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
-    viewModel.spinnerGroup117List.value = mutableListOf(
-    SpinnerGroup117Model("Item1"),
-    SpinnerGroup117Model("Item2"),
-    SpinnerGroup117Model("Item3"),
-    SpinnerGroup117Model("Item4"),
-    SpinnerGroup117Model("Item5")
+    viewModel.spinnerGroup911List.value = mutableListOf(
+    SpinnerGroup911Model("Item1"),
+    SpinnerGroup911Model("Item2"),
+    SpinnerGroup911Model("Item3"),
+    SpinnerGroup911Model("Item4"),
+    SpinnerGroup911Model("Item5")
     )
-    val spinnerGroup117Adapter =
-    SpinnerGroup117Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup117List.value?:
+    val spinnerGroup911Adapter =
+    SpinnerGroup911Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup911List.value?:
     mutableListOf())
-    binding.spinnerGroup117.adapter = spinnerGroup117Adapter
+    binding.spinnerGroup911.adapter = spinnerGroup911Adapter
     val phonePayTwoAdapter =
     PhonePayTwoAdapter(viewModel.phonePayTwoList.value?:mutableListOf())
     binding.recyclerPhonePayTwo.adapter = phonePayTwoAdapter

@@ -4,6 +4,7 @@ import androidx.activity.viewModels
 import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
 import com.opemiposapplication.app.databinding.ActivitySplashScreenBinding
+import com.opemiposapplication.app.modules.onboardthree.ui.OnboardThreeActivity
 import com.opemiposapplication.app.modules.splashscreen.`data`.viewmodel.SplashScreenVM
 import kotlin.String
 import kotlin.Unit
@@ -18,6 +19,10 @@ class SplashScreenActivity :
   }
 
   override fun setUpClicks(): Unit {
+    binding.btnGetStarted.setOnClickListener {
+      val destIntent = OnboardThreeActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
   }
 
   companion object {

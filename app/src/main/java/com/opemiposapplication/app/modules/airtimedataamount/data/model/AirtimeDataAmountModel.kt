@@ -25,7 +25,7 @@ data class AirtimeDataAmountModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtOWNYOURWEIRDOne: String? = MyApp.getInstance().resources.getString(R.string.lbl_data)
+  var txtOWNYOURWEIRDOne: String? = MyApp.getInstance().resources.getString(R.string.lbl_airtime)
   ,
   /**
    * TODO Replace with dynamic value
@@ -36,18 +36,12 @@ data class AirtimeDataAmountModel(
    * TODO Replace with dynamic value
    */
   var txtEnterReceipien: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_select_data_pac)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var txtEnterReceipienOne: String? =
       MyApp.getInstance().resources.getString(R.string.msg_how_much_airtim)
   ,
   /**
    * TODO Replace with dynamic value
    */
-  var txtTransferFrom: String? = MyApp.getInstance().resources.getString(R.string.lbl_data_from)
+  var txtTransferFrom: String? = MyApp.getInstance().resources.getString(R.string.lbl_airtime_from)
   ,
   /**
    * TODO Replace with dynamic value

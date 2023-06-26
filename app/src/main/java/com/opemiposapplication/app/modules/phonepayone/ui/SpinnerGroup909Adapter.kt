@@ -1,4 +1,4 @@
-package com.opemiposapplication.app.modules.airtimedataamount.ui
+package com.opemiposapplication.app.modules.phonepayone.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,16 +8,16 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import androidx.`annotation`.LayoutRes
 import com.opemiposapplication.app.R
-import com.opemiposapplication.app.modules.airtimedataamount.`data`.model.SpinnerFilesizeModel
+import com.opemiposapplication.app.modules.phonepayone.`data`.model.SpinnerGroup909Model
 import kotlin.Int
 import kotlin.collections.List
 
-class SpinnerFilesizeAdapter(
+class SpinnerGroup909Adapter(
   private val mContext: Context,
   @LayoutRes
   private val layoutResource: Int,
-  private val allItems: List<SpinnerFilesizeModel>
-) : ArrayAdapter<SpinnerFilesizeModel>(mContext, layoutResource, allItems) {
+  private val allItems: List<SpinnerGroup909Model>
+) : ArrayAdapter<SpinnerGroup909Model>(mContext, layoutResource, allItems) {
   override fun getView(
     position: Int,
     convertView: View?,

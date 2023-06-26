@@ -1,5 +1,8 @@
 package com.opemiposapplication.app.modules.splashscreenone.ui
 
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import androidx.activity.viewModels
 import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
@@ -23,5 +26,11 @@ class SplashScreenOneActivity :
   companion object {
     const val TAG: String = "SPLASH_SCREEN_ONE_ACTIVITY"
 
+
+    fun getIntent(context: Context, bundle: Bundle?): Intent {
+      val destIntent = Intent(context, SplashScreenOneActivity::class.java)
+      destIntent.putExtra("bundle", bundle)
+      return destIntent
+    }
   }
 }

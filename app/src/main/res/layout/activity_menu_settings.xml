@@ -53,11 +53,10 @@
                                     android:src="@drawable/img_menu_white_a700"
                                     tools:ignore="ContentDescription" tools:src="@drawable/img_menu_white_a700"/>
                                 <FrameLayout
-                                    android:id="@+id/frameStackgroupeighty"
+                                    android:id="@+id/frameStackgroup874"
                                     android:layout_height="@dimen/_20pxv"
                                     android:layout_marginStart="@dimen/_281pxh" android:layout_width="@dimen/_20pxh">
-                                    <View
-                                    android:id="@+id/viewGroupEighty"
+                                    <View android:id="@+id/viewGroup874"
                                     android:layout_gravity="start"
                                     android:layout_height="@dimen/_20pxh" android:layout_width="@dimen/_20pxh"/>
                                     <ImageView
@@ -66,8 +65,8 @@
                                     android:layout_height="@dimen/_20pxh"
                                     android:layout_width="@dimen/_20pxh"
                                     android:scaleType="fitXY"
-                                    android:src="@drawable/img_calendar_white_a700_20x20"
-                                    tools:ignore="ContentDescription" tools:src="@drawable/img_calendar_white_a700_20x20"/>
+                                    android:src="@drawable/img_calendar_white_a700"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_calendar_white_a700"/>
                                     <ImageView
                                     android:id="@+id/imageTrash"
                                     android:layout_gravity="bottom|center"
@@ -77,8 +76,8 @@
                                     android:layout_marginTop="@dimen/_10pxv"
                                     android:layout_width="@dimen/_8pxh"
                                     android:scaleType="fitXY"
-                                    android:src="@drawable/img_trash_white_a700_10x8"
-                                    tools:ignore="ContentDescription" tools:src="@drawable/img_trash_white_a700_10x8"/>
+                                    android:src="@drawable/img_trash_white_a700"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_trash_white_a700"/>
                                 </FrameLayout>
                             </LinearLayout>
                             <TextView android:ellipsize="end"
@@ -448,8 +447,8 @@
                                 android:layout_marginTop="@dimen/_1pxv"
                                 android:layout_width="@dimen/_15pxh"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/img_ticket"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_ticket"/>
+                                android:src="@drawable/img_ticket_white_a700_19x18"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_ticket_white_a700_19x18"/>
                             <TextView android:ellipsize="end"
                                 android:id="@+id/txtBillPayment"
                                 android:layout_height="wrap_content"

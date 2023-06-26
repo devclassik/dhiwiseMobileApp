@@ -4,7 +4,7 @@ import androidx.activity.viewModels
 import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
 import com.opemiposapplication.app.databinding.ActivityPersonalInformationBinding
-import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroup111Model
+import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroup905Model
 import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroupTwentyModel
 import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroupTwentyThreeModel
 import com.opemiposapplication.app.modules.personalinformation.`data`.viewmodel.PersonalInformationVM
@@ -39,17 +39,17 @@ class PersonalInformationActivity :
     SpinnerGroupTwentyThreeAdapter(this,R.layout.spinner_item,viewModel.spinnerGroupTwentyThreeList.value?:
     mutableListOf())
     binding.spinnerGroupTwentyThree.adapter = spinnerGroupTwentyThreeAdapter
-    viewModel.spinnerGroup111List.value = mutableListOf(
-    SpinnerGroup111Model("Item1"),
-    SpinnerGroup111Model("Item2"),
-    SpinnerGroup111Model("Item3"),
-    SpinnerGroup111Model("Item4"),
-    SpinnerGroup111Model("Item5")
+    viewModel.spinnerGroup905List.value = mutableListOf(
+    SpinnerGroup905Model("Item1"),
+    SpinnerGroup905Model("Item2"),
+    SpinnerGroup905Model("Item3"),
+    SpinnerGroup905Model("Item4"),
+    SpinnerGroup905Model("Item5")
     )
-    val spinnerGroup111Adapter =
-    SpinnerGroup111Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup111List.value?:
+    val spinnerGroup905Adapter =
+    SpinnerGroup905Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup905List.value?:
     mutableListOf())
-    binding.spinnerGroup111.adapter = spinnerGroup111Adapter
+    binding.spinnerGroup905.adapter = spinnerGroup905Adapter
     binding.personalInformationVM = viewModel
   }
 

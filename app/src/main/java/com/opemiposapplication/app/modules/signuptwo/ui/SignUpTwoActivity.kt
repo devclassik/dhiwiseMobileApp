@@ -1,5 +1,8 @@
 package com.opemiposapplication.app.modules.signuptwo.ui
 
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.widget.SearchView
 import com.opemiposapplication.app.R
@@ -41,5 +44,11 @@ class SignUpTwoActivity : BaseActivity<ActivitySignUpTwoBinding>(R.layout.activi
     companion object {
       const val TAG: String = "SIGN_UP_TWO_ACTIVITY"
 
+
+      fun getIntent(context: Context, bundle: Bundle?): Intent {
+        val destIntent = Intent(context, SignUpTwoActivity::class.java)
+        destIntent.putExtra("bundle", bundle)
+        return destIntent
+      }
     }
   }

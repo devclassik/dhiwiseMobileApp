@@ -1,11 +1,14 @@
 package com.opemiposapplication.app.modules.signupone.ui
 
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.widget.SearchView
 import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
 import com.opemiposapplication.app.databinding.ActivitySignUpOneBinding
-import com.opemiposapplication.app.modules.signupone.`data`.model.SpinnerGroup109Model
+import com.opemiposapplication.app.modules.signupone.`data`.model.SpinnerGroup903Model
 import com.opemiposapplication.app.modules.signupone.`data`.viewmodel.SignUpOneVM
 import kotlin.Boolean
 import kotlin.String
@@ -16,17 +19,17 @@ class SignUpOneActivity : BaseActivity<ActivitySignUpOneBinding>(R.layout.activi
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
-    viewModel.spinnerGroup109List.value = mutableListOf(
-    SpinnerGroup109Model("Item1"),
-    SpinnerGroup109Model("Item2"),
-    SpinnerGroup109Model("Item3"),
-    SpinnerGroup109Model("Item4"),
-    SpinnerGroup109Model("Item5")
+    viewModel.spinnerGroup903List.value = mutableListOf(
+    SpinnerGroup903Model("Item1"),
+    SpinnerGroup903Model("Item2"),
+    SpinnerGroup903Model("Item3"),
+    SpinnerGroup903Model("Item4"),
+    SpinnerGroup903Model("Item5")
     )
-    val spinnerGroup109Adapter =
-    SpinnerGroup109Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup109List.value?:
+    val spinnerGroup903Adapter =
+    SpinnerGroup903Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup903List.value?:
     mutableListOf())
-    binding.spinnerGroup109.adapter = spinnerGroup109Adapter
+    binding.spinnerGroup903.adapter = spinnerGroup903Adapter
     binding.signUpOneVM = viewModel
     setUpSearchViewGroupElevenListener()
   }
@@ -53,5 +56,11 @@ class SignUpOneActivity : BaseActivity<ActivitySignUpOneBinding>(R.layout.activi
     companion object {
       const val TAG: String = "SIGN_UP_ONE_ACTIVITY"
 
+
+      fun getIntent(context: Context, bundle: Bundle?): Intent {
+        val destIntent = Intent(context, SignUpOneActivity::class.java)
+        destIntent.putExtra("bundle", bundle)
+        return destIntent
+      }
     }
   }

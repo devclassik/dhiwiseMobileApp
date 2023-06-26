@@ -1,4 +1,4 @@
-package com.opemiposapplication.app.modules.signupone.ui
+package com.opemiposapplication.app.modules.personalinformation.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,16 +8,16 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import androidx.`annotation`.LayoutRes
 import com.opemiposapplication.app.R
-import com.opemiposapplication.app.modules.signupone.`data`.model.SpinnerGroup109Model
+import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroup905Model
 import kotlin.Int
 import kotlin.collections.List
 
-class SpinnerGroup109Adapter(
+class SpinnerGroup905Adapter(
   private val mContext: Context,
   @LayoutRes
   private val layoutResource: Int,
-  private val allItems: List<SpinnerGroup109Model>
-) : ArrayAdapter<SpinnerGroup109Model>(mContext, layoutResource, allItems) {
+  private val allItems: List<SpinnerGroup905Model>
+) : ArrayAdapter<SpinnerGroup905Model>(mContext, layoutResource, allItems) {
   override fun getView(
     position: Int,
     convertView: View?,

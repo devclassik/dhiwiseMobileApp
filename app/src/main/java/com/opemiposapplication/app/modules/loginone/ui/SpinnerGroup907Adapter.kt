@@ -8,16 +8,16 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import androidx.`annotation`.LayoutRes
 import com.opemiposapplication.app.R
-import com.opemiposapplication.app.modules.loginone.`data`.model.SpinnerGroup113Model
+import com.opemiposapplication.app.modules.loginone.`data`.model.SpinnerGroup907Model
 import kotlin.Int
 import kotlin.collections.List
 
-class SpinnerGroup113Adapter(
+class SpinnerGroup907Adapter(
   private val mContext: Context,
   @LayoutRes
   private val layoutResource: Int,
-  private val allItems: List<SpinnerGroup113Model>
-) : ArrayAdapter<SpinnerGroup113Model>(mContext, layoutResource, allItems) {
+  private val allItems: List<SpinnerGroup907Model>
+) : ArrayAdapter<SpinnerGroup907Model>(mContext, layoutResource, allItems) {
   override fun getView(
     position: Int,
     convertView: View?,

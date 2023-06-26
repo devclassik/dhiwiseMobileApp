@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.opemiposapplication.app.modules.phonepaytwo.`data`.model.PhonePayTwoModel
 import com.opemiposapplication.app.modules.phonepaytwo.`data`.model.PhonePayTwoRowModel
-import com.opemiposapplication.app.modules.phonepaytwo.`data`.model.SpinnerGroup117Model
+import com.opemiposapplication.app.modules.phonepaytwo.`data`.model.SpinnerGroup911Model
 import kotlin.collections.MutableList
 import org.koin.core.KoinComponent
 
@@ -14,7 +14,7 @@ class PhonePayTwoVM : ViewModel(), KoinComponent {
 
   var navArguments: Bundle? = null
 
-  val spinnerGroup117List: MutableLiveData<MutableList<SpinnerGroup117Model>> = MutableLiveData()
+  val spinnerGroup911List: MutableLiveData<MutableList<SpinnerGroup911Model>> = MutableLiveData()
 
   val phonePayTwoList: MutableLiveData<MutableList<PhonePayTwoRowModel>> =
       MutableLiveData(mutableListOf())

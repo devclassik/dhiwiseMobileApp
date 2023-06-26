@@ -4,7 +4,7 @@ import androidx.activity.viewModels
 import com.opemiposapplication.app.R
 import com.opemiposapplication.app.appcomponents.base.BaseActivity
 import com.opemiposapplication.app.databinding.ActivityPhonePayOneBinding
-import com.opemiposapplication.app.modules.phonepayone.`data`.model.SpinnerGroup115Model
+import com.opemiposapplication.app.modules.phonepayone.`data`.model.SpinnerGroup909Model
 import com.opemiposapplication.app.modules.phonepayone.`data`.viewmodel.PhonePayOneVM
 import kotlin.String
 import kotlin.Unit
@@ -15,17 +15,17 @@ class PhonePayOneActivity :
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
-    viewModel.spinnerGroup115List.value = mutableListOf(
-    SpinnerGroup115Model("Item1"),
-    SpinnerGroup115Model("Item2"),
-    SpinnerGroup115Model("Item3"),
-    SpinnerGroup115Model("Item4"),
-    SpinnerGroup115Model("Item5")
+    viewModel.spinnerGroup909List.value = mutableListOf(
+    SpinnerGroup909Model("Item1"),
+    SpinnerGroup909Model("Item2"),
+    SpinnerGroup909Model("Item3"),
+    SpinnerGroup909Model("Item4"),
+    SpinnerGroup909Model("Item5")
     )
-    val spinnerGroup115Adapter =
-    SpinnerGroup115Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup115List.value?:
+    val spinnerGroup909Adapter =
+    SpinnerGroup909Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup909List.value?:
     mutableListOf())
-    binding.spinnerGroup115.adapter = spinnerGroup115Adapter
+    binding.spinnerGroup909.adapter = spinnerGroup909Adapter
     binding.phonePayOneVM = viewModel
   }
 

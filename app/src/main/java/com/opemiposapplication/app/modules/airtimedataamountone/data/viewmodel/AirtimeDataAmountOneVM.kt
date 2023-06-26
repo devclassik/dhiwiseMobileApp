@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.opemiposapplication.app.modules.airtimedataamountone.`data`.model.AirtimeDataAmountOneModel
+import com.opemiposapplication.app.modules.airtimedataamountone.`data`.model.SpinnerFilesizeModel
+import kotlin.collections.MutableList
 import org.koin.core.KoinComponent
 
 class AirtimeDataAmountOneVM : ViewModel(), KoinComponent {
@@ -11,4 +13,6 @@ class AirtimeDataAmountOneVM : ViewModel(), KoinComponent {
       MutableLiveData(AirtimeDataAmountOneModel())
 
   var navArguments: Bundle? = null
+
+  val spinnerFilesizeList: MutableLiveData<MutableList<SpinnerFilesizeModel>> = MutableLiveData()
 }

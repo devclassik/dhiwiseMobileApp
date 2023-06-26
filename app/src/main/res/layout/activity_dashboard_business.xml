@@ -290,8 +290,8 @@
                                     android:layout_marginTop="@dimen/_12pxv"
                                     android:layout_width="@dimen/_18pxh"
                                     android:scaleType="fitXY"
-                                    android:src="@drawable/img_ticket"
-                                    tools:ignore="ContentDescription" tools:src="@drawable/img_ticket"/>
+                                    android:src="@drawable/img_ticket_white_a700_19x18"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_ticket_white_a700_19x18"/>
                                 <TextView android:ellipsize="end"
                                     android:id="@+id/txtBillPayment"
                                     android:layout_gravity="center_horizontal"

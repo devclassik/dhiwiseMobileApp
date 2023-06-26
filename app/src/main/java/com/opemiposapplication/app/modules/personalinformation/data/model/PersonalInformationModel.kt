@@ -30,7 +30,7 @@ data class PersonalInformationModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtGroupTenOne: String? = MyApp.getInstance().resources.getString(R.string.lbl_house_no)
+  var txtGroup804: String? = MyApp.getInstance().resources.getString(R.string.lbl_house_no)
   ,
   /**
    * TODO Replace with dynamic value
@@ -52,5 +52,5 @@ data class PersonalInformationModel(
   /**
    * TODO Replace with dynamic value
    */
-  var etGroupElevenValue: String? = null
+  var etGroup805Value: String? = null
 )

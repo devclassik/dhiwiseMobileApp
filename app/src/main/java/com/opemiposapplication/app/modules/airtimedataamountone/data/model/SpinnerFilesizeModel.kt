@@ -1,4 +1,4 @@
-package com.opemiposapplication.app.modules.airtimedataamount.`data`.model
+package com.opemiposapplication.app.modules.airtimedataamountone.`data`.model
 
 import kotlin.String
 

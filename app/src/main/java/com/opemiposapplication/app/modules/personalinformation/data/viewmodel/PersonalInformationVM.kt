@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.opemiposapplication.app.modules.personalinformation.`data`.model.PersonalInformationModel
-import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroup111Model
+import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroup905Model
 import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroupTwentyModel
 import com.opemiposapplication.app.modules.personalinformation.`data`.model.SpinnerGroupTwentyThreeModel
 import kotlin.collections.MutableList
@@ -22,5 +22,5 @@ class PersonalInformationVM : ViewModel(), KoinComponent {
   val spinnerGroupTwentyThreeList: MutableLiveData<MutableList<SpinnerGroupTwentyThreeModel>> =
       MutableLiveData()
 
-  val spinnerGroup111List: MutableLiveData<MutableList<SpinnerGroup111Model>> = MutableLiveData()
+  val spinnerGroup905List: MutableLiveData<MutableList<SpinnerGroup905Model>> = MutableLiveData()
 }

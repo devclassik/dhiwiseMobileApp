@@ -9,7 +9,7 @@
         android:id="@+id/scrollViewScrollview"
         android:layout_height="match_parent" android:layout_width="match_parent">
         <LinearLayout android:gravity="start"
-            android:id="@+id/linearColumngroup113"
+            android:id="@+id/linearColumngroup907"
             android:layout_height="wrap_content"
             android:layout_width="match_parent" android:orientation="vertical">
             <LinearLayout android:gravity="start"
@@ -40,7 +40,7 @@
                             android:layout_marginEnd="@dimen/_4pxh"
                             android:layout_marginStart="@dimen/_5pxh" android:layout_width="@dimen/_5pxh"/>
                     </LinearLayout>
-                    <Spinner android:id="@+id/spinnerGroup113"
+                    <Spinner android:id="@+id/spinnerGroup907"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/_16pxv"
                         android:layout_marginEnd="@dimen/_10pxh"
