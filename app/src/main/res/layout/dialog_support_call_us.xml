@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="supportCallUsVM" type="com.opemiposapplication.app.modules.supportcallus.data.viewmodel.SupportCallUsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSupportCall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumncall"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_306pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_305pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_3">
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowcall"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_62pxv"
+                android:layout_marginEnd="@dimen/_34pxh"
+                android:layout_marginStart="@dimen/_34pxh"
+                android:layout_marginTop="@dimen/_56pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecyan_2">
+                <ImageView android:id="@+id/imageCall"
+                    android:layout_height="@dimen/_33pxh"
+                    android:layout_marginBottom="@dimen/_19pxv"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_33pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_call_white_a700_33x33"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_call_white_a700_33x33"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumngiveusacall"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_19pxv"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_weight="0.83"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtGiveusacall"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_3pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{supportCallUsVM.supportCallUsModel.txtGiveusacall}"
+                        style="@style/txtWorkSansmedium10_2" tools:text="@string/msg_give_us_a_call"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txt23400000000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{supportCallUsVM.supportCallUsModel.txt23400000000}"
+                        style="@style/txtWorkSansbold16" tools:text="@string/msg_234_000_0000_0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

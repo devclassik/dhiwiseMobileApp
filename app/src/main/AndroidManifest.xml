@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.opemiposapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.opemiposapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.opemiposapplication.app.modules.supporposdisputet.ui.SupporPosDisputetActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.resetpassword.ui.ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menubillpayment.ui.MenuBillPaymentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentsummarytwo.ui.BillPaymentSummaryTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.alltransactionstransfersone.ui.AllTransactionsTransfersOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.airtimedatabeneficiary.ui.AirtimeDataBeneficiaryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.onboardone.ui.OnboardOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menuposterminal.ui.MenuPosTerminalActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supportchatwithus.ui.SupportChatWithUsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menudashboard.ui.MenuDashboardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingsposconfig.ui.SettingsPosConfigActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.transfertwo.ui.TransferTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentbeneficiaryone.ui.BillPaymentBeneficiaryOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menusupport.ui.MenuSupportActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.alltransactionsbillpayment.ui.AllTransactionsBillPaymentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.signuptwo.ui.SignUpTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingspersonalinformation.ui.SettingsPersonalInformationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.airtimedataamountone.ui.AirtimeDataAmountOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingsconfigsettings.ui.SettingsConfigSettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.dashboardpersonal.ui.DashboardPersonalActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.phonepaytwo.ui.PhonePayTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.otp.ui.OtpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.onboardtwo.ui.OnboardTwoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.opemiposapplication.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.opemiposapplication.app.modules.phonepaythree.ui.PhonePayThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.airtimedatasummaryone.ui.AirtimeDataSummaryOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingslanguage.ui.SettingsLanguageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supportselect.ui.SupportSelectActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.otptransfer.ui.OtpTransferActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingsdevices.ui.SettingsDevicesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supporposdisputettwo.ui.SupporPosDisputetTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.signupone.ui.SignUpOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.securityfour.ui.SecurityFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.alltransactionsphonepay.ui.AllTransactionsPhonePayActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.alltransactionsall.ui.AllTransactionsAllActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingsterminalreceiptconfig.ui.SettingsTerminalReceiptConfigActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supportdispute.ui.SupportDisputeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentcabletv.ui.BillPaymentCableTvActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.transfer.ui.TransferActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supporposdisputetthree.ui.SupporPosDisputetThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.otpbillpaymentone.ui.OtpBillPaymentOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supporposdisputetone.ui.SupporPosDisputetOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supportcontactus.ui.SupportContactUsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.phonepayone.ui.PhonePayOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.otpairtime.ui.OtpAirtimeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supportfaqs.ui.SupportFaqsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.welcomeback.ui.WelcomeBackActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settings.ui.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.pinlogin.ui.PinLoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.start.ui.StartActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.otplogin.ui.OtpLoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menutransfers.ui.MenuTransfersActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.splashscreenone.ui.SplashScreenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingsposterminalfeatures.ui.SettingsPosTerminalFeaturesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentsummary.ui.BillPaymentSummaryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.bankinformation.ui.BankInformationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.onboardthree.ui.OnboardThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menudashboardone.ui.MenuDashboardOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.login1.ui.Login1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supporcarddisputetone.ui.SupporCardDisputetOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentbeneficiary.ui.BillPaymentBeneficiaryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.airtimedatabeneficiaryone.ui.AirtimeDataBeneficiaryOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.phonepay.ui.PhonePayActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.businessinformation.ui.BusinessInformationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.securityone.ui.SecurityOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingsaccountinformation.ui.SettingsAccountInformationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.otpsuccessful.ui.OtpSuccessfulActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentsummaryone.ui.BillPaymentSummaryOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.securitytwo.ui.SecurityTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.securitythree.ui.SecurityThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menusettings.ui.MenuSettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.personalinformation.ui.PersonalInformationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentutilities.ui.BillPaymentUtilitiesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentselectcategory.ui.BillPaymentSelectCategoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menualltransactions.ui.MenuAllTransactionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.airtimedataamount.ui.AirtimeDataAmountActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supporcarddisputet.ui.SupporCardDisputetActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.proofofidentityone.ui.ProofOfIdentityOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.security.ui.SecurityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentbettinglottery.ui.BillPaymentBettingLotteryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingssecuritychangepasswordone.ui.SettingsSecurityChangePasswordOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.proofofidentity.ui.ProofOfIdentityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.billpaymentbeneficiarytwo.ui.BillPaymentBeneficiaryTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.airtimedataselect.ui.AirtimeDataSelectActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingssecuritychangepassword.ui.SettingsSecurityChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.airtimedatasummary.ui.AirtimeDataSummaryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.supportmessages.ui.SupportMessagesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.alltransactionstransfers.ui.AllTransactionsTransfersActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.transferone.ui.TransferOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.posterminal.ui.PosTerminalActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menuairtimedata.ui.MenuAirtimeDataActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.dashboardbusiness.ui.DashboardBusinessActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.menuphonepay.ui.MenuPhonePayActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.alltransactionspostransactions.ui.AllTransactionsPosTransactionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.alltransactionsairtimedata.ui.AllTransactionsAirtimeDataActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.posterminaldetails.ui.PosTerminalDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.enterbvn.ui.EnterBvnActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.otpbillpayment.ui.OtpBillPaymentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.onboard.ui.OnboardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.opemiposapplication.app.modules.settingssecurity.ui.SettingsSecurityActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

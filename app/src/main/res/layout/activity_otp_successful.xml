@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="otpSuccessfulVM" type="com.opemiposapplication.app.modules.otpsuccessful.data.viewmodel.OtpSuccessfulVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearOTPSuccessful"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtBack"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{otpSuccessfulVM.otpSuccessfulModel.txtBack}"
+            style="@style/txtWorkSanssemibold12" tools:text="@string/lbl_back"/>
+        <ImageView android:id="@+id/imageGroupTwentyOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_270pxh"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_113pxv"
+            android:layout_width="@dimen/_301pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group21"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_group21"/>
+        <FrameLayout android:id="@+id/frameStackverificationsu"
+            android:layout_height="@dimen/_97pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_53pxv" android:layout_width="@dimen/_274pxh">
+            <LinearLayout android:id="@+id/linearColumnverificationsu"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtVerificationSu"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_width="match_parent"
+                    android:text="@{otpSuccessfulVM.otpSuccessfulModel.txtVerificationSu}"
+                    style="@style/txtWorkSanssemibold36" tools:text="@string/msg_verification_su"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtProceedtobusi"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{otpSuccessfulVM.otpSuccessfulModel.txtProceedtobusi}"
+                    style="@style/txtWorkSansregular12" tools:text="@string/msg_proceed_to_busi"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageBackgroundComp"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_10pxh"
+                android:layout_marginBottom="@dimen/_26pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="@dimen/_226pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_backgroundcomp"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_backgroundcomp"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnContinue"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_54pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:text="@string/lbl_continue"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_continue"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtTermAndCondition"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent"
+            android:text="@{otpSuccessfulVM.otpSuccessfulModel.txtTermAndCondition}"
+            style="@style/txtWorkSansregular12" tools:text="@string/msg_by_clicking_the"/>
+    </LinearLayout>
+</layout>

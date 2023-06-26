@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="login1VM" type="com.opemiposapplication.app.modules.login1.data.viewmodel.Login1VM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackback"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnback"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtBack"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{login1VM.login1Model.txtBack}"
+                style="@style/txtWorkSanssemibold12" tools:text="@string/lbl_back"/>
+            <ImageView android:id="@+id/imageGroupTwentyFive"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_255pxh"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_36pxv"
+                android:layout_width="@dimen/_256pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group25"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group25"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtWelcomeBack"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{login1VM.login1Model.txtWelcomeBack}"
+                style="@style/txtWorkSanssemibold36" tools:text="@string/lbl_welcome_back"/>
+            <com.google.android.material.tabs.TabLayout
+                android:gravity="center_horizontal"
+                android:id="@+id/tabLayoutGroup22"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent" app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/light_blue_700"
+                app:tabTextColor="@color/gray_500" style="@style/groupStylecornerRadius_5"/>
+            <androidx.viewpager2.widget.ViewPager2
+                android:gravity="center_horizontal"
+                android:id="@+id/viewPagerViewpager"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_weight="1" android:layout_width="match_parent"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
