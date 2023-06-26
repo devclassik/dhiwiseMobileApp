@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="supportEmailVM" type="com.opemiposapplication.app.modules.supportemail.data.viewmodel.SupportEmailVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSupportEmail"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnalarm"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_306pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_305pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_3">
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowalarm"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_62pxv"
+                android:layout_marginEnd="@dimen/_34pxh"
+                android:layout_marginStart="@dimen/_34pxh"
+                android:layout_marginTop="@dimen/_56pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecyan_2">
+                <ImageView android:id="@+id/imageAlarm"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_18pxv"
+                    android:layout_marginStart="@dimen/_33pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="@dimen/_29pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_alarm"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_alarm"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnsendusanemai"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_17pxv"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_weight="0.84"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSendusanemai"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{supportEmailVM.supportEmailModel.txtSendusanemai}"
+                        style="@style/txtWorkSansmedium10_2" tools:text="@string/msg_send_us_an_emai"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEmail"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{supportEmailVM.supportEmailModel.txtEmail}"
+                        style="@style/txtWorkSansbold16" tools:text="@string/msg_info_huiospay_c"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

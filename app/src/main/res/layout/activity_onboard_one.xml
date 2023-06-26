@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardOneVM" type="com.opemiposapplication.app.modules.onboardone.data.viewmodel.OnboardOneVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearOnboardOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtSkip"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{onboardOneVM.onboardOneModel.txtSkip}"
+            style="@style/txtWorkSanssemibold12" tools:text="@string/lbl_skip"/>
+        <View
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            android:id="@+id/viewRectangleTwentyTwo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_320pxh"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_47pxv" android:layout_width="@dimen/_276pxh"/>
+        <ImageView android:id="@+id/imageGroupTwo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_18pxh"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_130pxv"
+            android:layout_width="@dimen/_35pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_group2"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_group2"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumn"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumngetStarted"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_64pxh"
+                android:layout_marginStart="@dimen/_64pxh"
+                android:layout_marginTop="@dimen/_43pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnGetStarted"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_get_started"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_get_started"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
