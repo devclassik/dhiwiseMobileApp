@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="phonePayTwoRowModel" type="com.opemiposapplication.app.modules.phonepaytwo.data.model.PhonePayTwoRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipsethirtythree"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylelight_blue_50cornerRadius">
+        <LinearLayout android:id="@+id/linearRowgroup1562"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_weight="0.9" android:layout_width="0dp"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius_10">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGroup1562"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_weight="0.17" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:paddingBottom="@dimen/_4pxv"
+                android:paddingStart="@dimen/_5pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:singleLine="true"
+                android:text="@{phonePayTwoRowModel.txtGroup1562}"
+                style="@style/txtSolidRounded_2" tools:text="@string/lbl_bc"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnprice"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_weight="0.83" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{phonePayTwoRowModel.txtPrice}"
+                    style="@style/txtWorkSanssemibold12_4" tools:text="@string/lbl_bright_cyph"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtZenithBankZero"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{phonePayTwoRowModel.txtZenithBankZero}"
+                    style="@style/txtWorkSanssemibold12_5" tools:text="@string/msg_2233445566_gt"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnellipsethirtythree"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:layout_marginStart="@dimen/_88pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_weight="0.1" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+            <View
+                android:background="@drawable/rectangle_bg_light_blue_700_radius_6_5"
+                android:id="@+id/viewEllipseThirtyThree"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_13pxh"
+                android:layout_marginHorizontal="@dimen/_3pxh"
+                android:layout_marginVertical="@dimen/_3pxv" android:layout_width="@dimen/_13pxh"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

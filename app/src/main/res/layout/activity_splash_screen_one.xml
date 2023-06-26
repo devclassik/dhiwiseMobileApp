@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenOneVM" type="com.opemiposapplication.app.modules.splashscreenone.data.viewmodel.SplashScreenOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackellipseeightOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameSplashScreenO"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+            <FrameLayout android:id="@+id/frameStackellipseseven"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_800pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent" style="@style/groupStyle">
+                <ImageView android:id="@+id/imageEllipseSeven"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_286pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_320pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse7}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse7"/>
+                <ImageView android:id="@+id/imageEllipseEight"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="@dimen/_425pxh"
+                    android:layout_marginBottom="@dimen/_149pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_149pxv"
+                    android:layout_width="@dimen/_225pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse8}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse8"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/imageEllipseEightOne"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_411pxv"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_ellipse8_411x360}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse8_411x360"/>
+            <ImageView android:id="@+id/imageRectangleThree"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_800pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_rectangle3}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle3"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>
